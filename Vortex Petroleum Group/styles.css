@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('newimage1.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1e3c72;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 14px 16px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Section Styles */
+.section {
+    display: none; /* Hide all sections by default */
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Adding some transparency to the sections */
+}
+
+.section.active {
+    display: block; /* Show the active section */
+}
+
+/* About and Contact Sections */
+.about-content, .contact-content {
+    display: flex;
+}
+
+.about-img, .contact-img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
